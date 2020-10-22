@@ -1,0 +1,87 @@
+* {
+	font-family: 'Balsamiq Sans', cursive;
+}
+
+:root {
+	--darkgreen:#A0C65C;
+	--lightgreen:#DAF7A6;
+}
+
+nav {
+	background-color: var(--darkgreen);
+	border-bottom: 3px black solid;
+	border-top: 3px black solid;
+}
+
+.navbar-brand {
+	color: white;
+	text-shadow: 2px 2px black;
+	font-size: 2.5rem;
+}
+
+/*AAAAAAAAAAAAAAAAAAAAARGH PAIN INT TH'ASS*/
+
+.navbar-brand:hover {
+	color:white;
+}
+
+nav li a, nav li a:hover {
+	color: white;
+}
+
+body {
+	background-color: #f0f0f0;
+	color: black;
+	text-align:center;
+}
+
+body a, body a:hover {
+	color: black;
+	text-decoration: none;
+}
+
+.container {
+	background-color: var(--lightgreen);
+	height: 100vh;
+	padding: 40px;
+	border-left: 3px black solid; 
+	border-right: 3px black solid; 
+}
+
+ol {
+	list-style:none;
+}
+
+#bandName {
+	text-transform: capitalize;
+}
+
+button {
+	background-color: var(--darkgreen);
+	border-radius: 20px;
+	color: white;
+	text-shadow: 1px 1px black;
+	height: 50px;
+	width: 100px;
+	margin-bottom: 10px;
+}
+
+button:hover {
+	background-color: white;
+	color: var(--darkgreen);
+	text-shadow: 0px 0px black;
+}
+
+button:focus {
+	outline:none;
+}
+
+h1 {
+	padding-bottom: 20px;
+}
+
+section {
+	background-color: #f0f0f0;
+	border: 2px black solid;
+	padding: 20px;
+}

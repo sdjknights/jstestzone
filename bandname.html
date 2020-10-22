@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial=scale=1">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css2?family=Advent+Pro&family=Roboto+Condensed&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/stylesheet.css">
+	<title>Random Band Name Generator</title>
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg">
+	  <a class="navbar-brand" href="index.html">JSTestZone</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarNav">
+	    <ul class="navbar-nav">
+	      <li class="nav-item active">
+	        <a class="nav-link" href="index.html">Home</a>
+	      </li>
+	    </ul>
+	  </div>
+	</nav>
+	
+	<div class="container">
+
+		<h1>Random Band Name Generator</h1>
+
+		<section>
+
+		<button onclick="bandNameFunction()">Click me</button>
+
+		<p id="bandName" class="pt-3">Click the button</p>
+
+		</section>
+
+	</div>
+
+	<script>
+
+		let name = [
+		"nerpy",
+		"poopy",
+		"buttface",
+		"nom nom",
+		"squelch",
+		"turd",
+		"cornhole",
+		"pok&#233turd", 
+		];
+
+		let adj = [
+		"smelly",
+		"nerpy",
+		"mouldy",
+		"hairy",
+		"itchy",
+		"soggy",
+		"little",
+		"purple",
+		"fat",
+		"wet",
+		"squishy",
+		"hard"
+		];
+
+		let noun = [
+		"poopsquit",
+		"bumblesquat",
+		"trumpbutt",
+		"nerp",
+		"cheesemuncher",
+		"chungus",
+		"fartbottom",
+		"notfart",
+		"chungling"
+		];
+
+		let nouns = [
+		"poopsquits",
+		"bumblesquats",
+		"trumpbutts",
+		"nerps",
+		"cheesemunchers",
+		"chungi",
+		"fartbottoms",
+		"notfarts",
+		"chunglings"
+		];
+
+		function bandNameFunction() {
+		let randomType = Math.floor(Math.random() * 2);
+		let randomName = name[Math.floor(Math.random()*name.length)];
+		let randomAdj = adj[Math.floor(Math.random()*adj.length)];
+		let randomNoun = noun[Math.floor(Math.random()*noun.length)];
+		let randomNouns = nouns[Math.floor(Math.random()*nouns.length)];
+		if (randomType === 0) {
+			document.getElementById("bandName").innerHTML = "The " + randomAdj + " " + randomNoun;
+		} else {
+			document.getElementById("bandName").innerHTML = randomName + " and the " + randomNouns;
+		}	
+			}
+
+	</script>
+
+
+
+</body>
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+</html>
