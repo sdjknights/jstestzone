@@ -1,6 +1,11 @@
 <!-- Start php -->
 <?php
 
+// error reporting
+
+ini_set('display_errors',1);  
+error_reporting(E_ALL);
+
 
 // Check if "submit" (a post thing) is set
 if (isset($_POST["submit"])) {
@@ -16,6 +21,6 @@ if (isset($_POST["submit"])) {
 	$txt = "You have received an email from ".$name.".\n\n".$message;
 
 
-	function mail($mailTo, $subject, $txt, $headers);
-	header("Location: index.php?mailsend");
+	mail($mailTo, $subject, $txt, $headers);
+	header("Location: index.html?mailsend");
 }
