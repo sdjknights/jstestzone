@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/stylesheet.css">
-	<title>JSTestZone</title>
+	<title>Email Form</title>
 </head>
 
 <body>
@@ -31,13 +31,15 @@
 
 		<section>
 
-		<ol>
-			<li><a href="countdown.html">Countdown</a></li>
-			<li><a href="bandname.html">Random Band Name Generator</a></li>
-			<li><a href="emailform.html">Email Form</a></li>
-			<li><a href="#">Link 4</a></li>
-			<li><a href="#">Link 5</a></li>
-		</ol>
+		<form action="/php/contactform.php" method="post">
+		  <label for="name">Name:</label><br>
+		  	<input type="text" id="name" name="name" value="" placeholder="Name"><br>
+		  <label for="fname">Email:</label><br>
+		  	<input type="text" id="mail" name="mail" value="" placeholder="Your Email Address"><br>
+		  <label for="lname">Message</label><br>
+		  	<input type="textarea" id="message" name="message" value="" placeholder="Message"><br><br>
+		  <button type="submit" name="submit">Submit</button>
+		</form>
 
 		</section>
 
